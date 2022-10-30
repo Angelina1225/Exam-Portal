@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="stylesheet" href="{% static 'css/donate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+</head>
+<body>
+
+<!--Main section starts here-->
+<form method='POST' action=" " >
+  {% csrf_token %}
+<div class="container">
+    <h1 class="donate", style=text-align:center;>Login</h1>
+    <label for="fname"><b>Username</b></label>
+          <input autocomplete="false" type="text" id="fname" name="username" placeholder="Your name">
+
+    <label for="Pass"></label><b>Password</b></label>
+    <input type="password" id="Pass" name="password" placeholder="Your password">
+
+    <a href="{% url 'login1' %}"><input type="submit" value="Login"></a><br>
+    <a href="{% url 'password_reset' %}">Forgot your paassword ?</a><br><br>
+    <p>Don't have an account? <a href="{% url 'register1' %}"><b>Sign up</b></a></p>
+    <div id="space"></div>
+  </div>
+</form>
+
+</body>
+</html>

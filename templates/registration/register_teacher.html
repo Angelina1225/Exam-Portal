@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register (Portal)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{% static 'css/donate.css' %}">
+    </head>
+
+  <body>
+    <div class="row">
+      <form method='POST' action=" " class="col">
+          {% csrf_token %}
+          <div class="container">
+              <h1 class="donate", style=text-align:center;>Sign Up</h1>
+                  <b>{{ form.as_p }} </b>
+              <a href="{% url 'login2' %}"><input type="submit" value="Sign Up"></a>
+              <p>Already have an account? <a href="{% url 'login2' %}"><b>Login</b></a></p>
+          </div>
+      </form>
+    </div>
+  </body>
+</html> 

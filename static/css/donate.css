@@ -1,0 +1,91 @@
+.donate {
+  color: black;
+  font-family: sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: rgb(97, 76, 175);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 13px;
+}
+
+input[type="submit"]:hover {
+  background-color: #4645a0;
+}
+
+.container {
+  border-radius: 5px;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  /* margin-top: 50px; */
+  margin-left: 500px;
+  margin-right: 430px;
+  background-color: rgb(255, 255, 255);
+}
+
+#space {
+  padding: 10px;
+}
+
+img{
+  width:30em;
+  height:30em;
+  padding-right: 15%;
+  float: left;
+}
+
+.row{
+  display: grid;
+  margin: 0%;
+  padding: 10%;
+  background: rgba(0,0,0,0.5);
+  grid-template-columns: 40% auto;
+}
+
